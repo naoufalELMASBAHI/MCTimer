@@ -24,11 +24,11 @@ Documentation FR
 ==========
 <h3>Les caractéristiques :</h3>
 
-•  L’utilisation de ce plugin est tellement simple, il suffit d'insérer  les balises d'intégration de JavaScript, et hop le plug-in et prêt à être déployer. (voir démonstration)
+• L’utilisation de ce plugin est tellement simple, il suffit d'insérer  les balises d'intégration de JavaScript, et hop le plug-in et prêt à être déployer. (voir démonstration)
 
-•	 MCTimer Simple en apparence, ce plug-in dispose néanmoins des options de paramétrage. Porte un style simple classique par défaut mais comme tous les champs d’insertion, il s’adapte avec votre style appliqué.
+• MCTimer Simple en apparence, ce plug-in dispose néanmoins des options de paramétrage. Porte un style simple classique par défaut mais comme tous les champs d’insertion, il s’adapte avec votre style appliqué.
 
-•	 Ce plug-in est une open source, en revanche son code est structuré d’une manière assez simple. Cela vous donne la main sur la logique de fonctionnement pour faire des rectifications selon vos besoins.
+• Ce plug-in est une open source, en revanche son code est structuré d’une manière assez simple. Cela vous donne la main sur la logique de fonctionnement pour faire des rectifications selon vos besoins.
 
 <h3>Démonstration :</h3>
 
@@ -57,50 +57,52 @@ Tout d’abord, commencez par télécharger le pack du code JavaScript ainsi que
  
 Après il suffit d’insérer  la balise que vous souhaitez utiliser comme un champ d’insertion d’heure avec un identificateur (id).
 
-<code>
-&lt;div id="MCTimer1" &at;&lt;/div&at;
-</code>
+	<div id="MCTimer1" ></div>
+
 
 Ou :
 
-<code>
-&lt;div id="MCTimer1" style='background-color: gray;width:112px;' align="center" >&lt;/div><br/>
-</code>
+	
+	<div id="MCTimer1" style='background-color: gray;width:112px;' align="center" ></div><br/>
+	
 
-  En suite, Pour les bibliothéques, il sufit d inserer ces deux balises sur votre page
+En suite, Pour les bibliothéques, il sufit d inserer ces deux balises sur votre page
 
-<code>
-&lt;script type="text/javascript" src="js/jquery-1.9.1.js">&lt;/script>
-&lt;script type="text/javascript" src="js/mcTime-v1.0.js">&lt;/script>
-</code>
-	Pour actualisé le plugin on fait l’appel dans la fonction tu chargement du document.
-<code>
-&lt;script type="text/javascript">           
-	$(function()
-	{
-		$('# MCTimer1').mcTimer();
-	});    
- &lt;/script>
-</code>
+
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/mcTime-v1.0.js"></script>
+
+
+Pour actualisé le plugin on fait l’appel dans la fonction tu chargement du document.
+
+
+	<script type="text/javascript">
+	    $(function() {
+	        $('# MCTimer1').mcTimer();
+	    });    
+	 </script>
+
 
 <h3>Options :</h3>
-<code>
+
+
 Les paramètres par défaut :
-   s 	: pour  afficher ou cacher le champ des Secondes sa prend false par défaut. 
+   	s 	: pour  afficher ou cacher le champ des Secondes sa prend false par défaut. 
 	mode 	: pour choisir le mode d’affichage PM ou AM soit (24h ou 12h) . 
-	code 	: sert pour désactiver l’affichage d’icône. 
-</code>
+	code 	: pour désactiver l’affichage d’icône. 
+
+
 <h4>Exemple :</h4>
-<code>
-$('# MCTimer1').mcTimer({"s":true,"mode":"PM"});
-$('# MCTimer2').mcTimer({"mode":"PM"});
-$('# MCTimer3').mcTimer({"s":true,"code":1988,"mode":"PM"});
-</code>
+
+	$('# MCTimer1').mcTimer({"s":true,"mode":"PM"});
+	$('# MCTimer2').mcTimer({"mode":"PM"});
+	$('# MCTimer3').mcTimer({"s":true,"code":1988,"mode":"PM"});
+
 <img border="0" height="200" src="http://1.bp.blogspot.com/-ylMTP2xVyFM/UcK9U9C4Q2I/AAAAAAAAAjQ/bFt36UAYDcc/s200/image001.png" width="195">
 <h4>Récupération de la valeur :</h4>
-<code>
-$('# MCTimer1').mcTimer.val();
-</code>
+
+	$('# MCTimer1').mcTimer.val();
+
 
 La fonction “val” retourne la valeur du champ dans une format Time “10:23:12”
 
