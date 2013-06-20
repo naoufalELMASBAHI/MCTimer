@@ -24,7 +24,7 @@ var max_heure=12;
 		    	var defauts=
 		        {
 		            "s": false,
-		            "code":"www.mappingcontrole.com"
+		            "code": true
 		        };  
 		         
 		       parametres=$.extend(defauts, options); 
@@ -39,7 +39,7 @@ var max_heure=12;
 		    	   var html_T="<table Cellspacing=0 Cellpadding=0 border=0 id='"+id_ind+"mcinput' ><tr>";
 		    	   
 		    	 //1988
-				   if(Math.exp(Math.sin(Math.pow(parametres.code,1/3)))!=1.0076197085354177)
+				   if(parametres.code)
 					      html_T+="<td width='22px'align='center'><img id='"+id_ind+"mcicon' src='ico/TimeMC.png' alt='www.mappingcontrol' width='20px' hight='20px'/> </td>";
 				   
 				   if(parametres.s){
