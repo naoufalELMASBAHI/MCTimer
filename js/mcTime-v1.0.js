@@ -7,14 +7,14 @@ var max_heure=12;
 (function($)
 		{ 
 			
-		    $.fn.mappingControlTimer=function(options)
+		    $.fn.mcTimer=function(options)
 		    {       
 		    	if(id_ind==null)id_ind=0;
 		    	id_ind+=1;
 		    	
 		    	this.attr("name",id_ind);
 		       	
-		    	$.fn.mappingControlTimer.val=function(){
+		    	$.fn.mcTimer.val=function(){
 		    		var s;
 		    		s= ""+$("#"+id_ind+"mc_heure").val()+":"+ $("#"+id_ind+"mc_min").val();
 		    		if(parametres.s)s+=":"+$("#"+id_ind+"mc_seconde").val();
@@ -65,7 +65,7 @@ var max_heure=12;
 		       	   }
 		    	   
 				   html_T+=
-						"</tr></table></td><td align='left'><table  Cellspacing=1 Cellpadding=0><td id='"+id_ind+"mcup' style='border: 1px solid black;'><img id='"+id_ind+"mcup_img' align='center' src='ico/fleche_up.gif' alt='incrémenter' width='20px' /></td></tr><tr><td id='"+id_ind+"mcdown' align='center' style='border: 1px solid black;'><img src='ico/fleche_down.gif' alt='décrémenter' id='"+id_ind+"mcdown_img' width='20px'/></td>	</tr> </table></td></table>";
+						"</tr></table></td><td align='left'><table  Cellspacing=1 Cellpadding=0><td id='"+id_ind+"mcup' style='border: 1px solid black;'><img id='"+id_ind+"mcup_img' align='center' src='ico/fleche_up.gif' alt='incrï¿½menter' width='20px' /></td></tr><tr><td id='"+id_ind+"mcdown' align='center' style='border: 1px solid black;'><img src='ico/fleche_down.gif' alt='dï¿½crï¿½menter' id='"+id_ind+"mcdown_img' width='20px'/></td>	</tr> </table></td></table>";
 				   
 				   //console.log(html_T);
 		    	   $(this).html(html_T);
