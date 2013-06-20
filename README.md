@@ -7,6 +7,8 @@ Supporte browsers are Chrome, Safari, Firefox, Opera, IE>8, so can be used in al
 
 Load them up in your project. Make sure you have jQuery 1.7 or later, as well.
 
+the jQuery mctimer plugin. It supports both mouse and keyboard navigation.
+
 <h2>
 Documentation</h2>
 
