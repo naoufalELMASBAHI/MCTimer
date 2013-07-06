@@ -9,17 +9,17 @@
         <script type="text/javascript">           
             $(function()
             {
-                $('#t1').mappingControlTimer({"s":true,"mode":"PM"});
-                $('#t2').mappingControlTimer({"mode":"PM"});
-                $('#t3').mappingControlTimer({"s":true,"code":1988,"mode":"PM"});
-                alert($('#t3').mappingControlTimer.val());
+                $('#t1').mcTimer({"s":true,"mode":"PM"});
+                $('#t2').mcTimer({"mode":"PM"});
+                $('#t3').mcTimer({"s":true,"code":1988,"mode":"PM"});
+                alert($('#t3').mcTimer.val());
 
             });    
         </script>
 
     </head>
     <body>
-        <h1 id="h1">MappingControlTimer Widget</h1>
+        
         <div id="t1" style='background-color: gray;width:112px;' align="center" ></div><br/>
         <div id="t2" style='width:112px;' align="center" ></div><br/>
         <div id="t3" ></div>
