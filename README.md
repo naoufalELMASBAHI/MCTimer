@@ -10,6 +10,9 @@ Supporte browsers are Chrome, Safari, Firefox, Opera, IE>8, so can be used in al
 
 Load them up in your project. Make sure you have jQuery 1.7 or later, as well.
 
+<h3>
+Demo</h3>
+<a href="https://rawgithub.com/naoufalELMASBAHI/MCTimer/master/testMcTime.html" target="_blank">Click Here</a>
 
 <h3>
 Download & Instalation</h3>
